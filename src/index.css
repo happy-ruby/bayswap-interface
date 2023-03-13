@@ -1,0 +1,70 @@
+:root {
+  --color-primary: #0071ff;
+  --box-shadow: 6px 4px 4px rgb(0 0 0 / 25%);
+  --color-button-primary: #0071ff;
+  --color-button-primary-text: #fff;
+  --color-success: #25ae88;
+  --color-error: #c03232;
+  --color-warning: #c9a01c;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body.dark {
+  --color-card: #000;
+  --color-text: #fff;
+  --color-subtext: #5b5d61;
+  --color-border: #181e25;
+  --color-input-text: #6a84a0;
+  --color-button: #1c1924;
+  --color-button-text: #fff;
+  --color-button-disabled: #101419;
+  --color-button-text-disabled: #384657;
+  --color-dialog: #000;
+  --color-li-hover: #111827;
+  --color-nav: #8fa2b7;
+  --color-nav-active: #fff;
+  --color-backdrop: rgb(17 24 39 / 90%);
+  --color-tooltip: #4b5563;
+
+  background-image: linear-gradient(
+    141.58deg,
+    #0b101d 29.33%,
+    #262262 51.3%,
+    #003448 75.4%
+  );
+}
+
+body.light {
+  --color-card: #fff;
+  --color-text: #181e25;
+  --color-border: #e9eaeb;
+  --color-input-text: #a7a7a7;
+  --color-button: #f2f2f2;
+  --color-button-text: #000;
+  --color-button-disabled: #e9eaeb;
+  --color-button-text-disabled: #bdc2c4;
+  --color-dialog: #fff;
+  --color-li-hover: #f3f4f6;
+  --color-nav: #8fa2b7;
+  --color-nav-active: #000;
+  --color-backdrop: rgb(0 0 0 / 60%);
+  --color-tooltip: #d1d5db;
+
+  background-image: linear-gradient(to bottom right, #e3e8f5, #e4e4ef);
+}
+
+body {
+  min-height: 100vh;
+  color: var(--color-text);
+  font-family: Montserrat, sans-serif;
+}
+
+button,
+input {
+  font-family: Montserrat, sans-serif;
+}

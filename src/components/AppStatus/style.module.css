@@ -1,0 +1,61 @@
+.body {
+  padding: 2rem;
+}
+
+.center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 4rem;
+  row-gap: 4rem;
+}
+
+.icon {
+  display: block;
+  margin: auto;
+}
+
+.title {
+  margin-top: 2rem;
+  font-size: 30px;
+  text-align: center;
+}
+
+.successTitle {
+  composes: title;
+  color: var(--color-success);
+}
+
+.errorTitle {
+  composes: title;
+  color: var(--color-error);
+}
+
+.processTitle {
+  font-size: 24px;
+}
+
+.button {
+  display: block;
+  width: 14rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  border: none;
+  border-radius: 8px;
+  margin: 2rem auto 0;
+  color: var(--color-button-primary-text);
+  cursor: pointer;
+  font-size: 20px;
+  outline: none;
+}
+
+.successButton {
+  composes: button;
+  background-color: var(--color-success);
+}
+
+.errorButton {
+  composes: button;
+  background-color: var(--color-error);
+}

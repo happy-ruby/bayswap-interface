@@ -1,0 +1,26 @@
+.root {
+  position: relative;
+}
+
+.dropdown {
+  position: absolute;
+  z-index: 5;
+  top: 3.5rem;
+  right: 0;
+  display: flex;
+  border-radius: 8px;
+  background: var(--color-dialog);
+  box-shadow: var(--box-shadow);
+}
+
+.dropdown::after {
+  position: absolute;
+  z-index: 10;
+  top: -5px;
+  right: 2rem;
+  width: 10px;
+  height: 10px;
+  background: var(--color-dialog);
+  content: '';
+  transform: rotate(45deg);
+}

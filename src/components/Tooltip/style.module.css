@@ -1,0 +1,29 @@
+.root {
+  position: relative;
+}
+
+.dropdown {
+  position: absolute;
+  z-index: 5;
+  right: -2rem;
+  display: flex;
+  width: 10rem;
+  padding: 0.5rem;
+  border-radius: 8px;
+  margin-top: 0.5rem;
+  background: var(--color-tooltip);
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.dropdown::after {
+  position: absolute;
+  z-index: 10;
+  top: -5px;
+  right: 2rem;
+  width: 10px;
+  height: 10px;
+  background: var(--color-tooltip);
+  content: '';
+  transform: rotate(45deg);
+}

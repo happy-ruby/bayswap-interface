@@ -1,0 +1,158 @@
+.container {
+  padding-right: 1rem;
+  padding-left: 1rem;
+  margin: 2rem auto;
+}
+
+.card {
+  min-height: 482px;
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  background-color: var(--color-card);
+}
+
+.center {
+  composes: card;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header {
+  display: none;
+}
+
+.row {
+  display: block;
+  min-height: 5rem;
+  padding: 1rem;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.row:last-child {
+  border-bottom: none;
+}
+
+.cell {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.title {
+  font-size: 14px;
+}
+
+.link {
+  display: inline-flex;
+  align-items: center;
+  color: var(--color-primary);
+  column-gap: 0.25rem;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.linkIcon {
+  width: 1.125rem;
+  height: 1.125rem;
+}
+
+.coins {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  row-gap: 0.5rem;
+}
+
+.coin {
+  display: flex;
+  align-items: center;
+  column-gap: 0.5rem;
+}
+
+.icon {
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+.connectButton {
+  height: 2.5rem;
+  padding-right: 2rem;
+  padding-left: 2rem;
+  border: none;
+  border-radius: 28px;
+  background: var(--color-button-primary);
+  color: var(--color-button-primary-text);
+  cursor: pointer;
+  font-size: 16px;
+  line-height: 24px;
+  outline: none;
+}
+
+@media (min-width: 480px) {
+  .coins {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    column-gap: 0.5rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+    margin-top: 4rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 992px;
+  }
+
+  .header {
+    display: grid;
+    height: 5rem;
+    align-items: center;
+    padding: 0 1rem;
+    border-bottom: 1px solid var(--color-border);
+    grid-template-columns: repeat(5, 1fr);
+  }
+
+  .row {
+    display: grid;
+    height: 5rem;
+    align-items: center;
+    padding: 0 1rem;
+    grid-template-columns: repeat(5, 1fr);
+  }
+
+  .cell {
+    margin-bottom: 0;
+  }
+
+  .title {
+    display: none;
+  }
+
+  .coins {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    row-gap: 0.5rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1400px;
+  }
+}

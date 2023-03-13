@@ -1,0 +1,135 @@
+.card {
+  min-height: 450px;
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  background-color: var(--color-card);
+}
+
+.center {
+  composes: card;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header {
+  display: none;
+}
+
+.row {
+  display: block;
+  min-height: 4rem;
+  padding: 1rem;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.row:last-child {
+  border-bottom: none;
+}
+
+.pool {
+  display: flex;
+  align-items: center;
+}
+
+.coinX,
+.coinY {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+.coinY {
+  position: relative;
+  right: 0.5rem;
+}
+
+.poolFullName {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.poolType {
+  font-size: 12px;
+  line-height: 24px;
+}
+
+.poolInfoDesktop {
+  display: none;
+}
+
+.poolInfoMobile {
+  display: flex;
+  margin-top: 1rem;
+  column-gap: 0.5rem;
+  font-size: 14px;
+}
+
+.buttonLink {
+  display: flex;
+  height: 2.5rem;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  margin-top: 1rem;
+  background-color: var(--color-button-primary);
+  color: var(--color-button-primary-text);
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+}
+
+.buttonLink:hover {
+  opacity: 0.8;
+}
+
+@media (min-width: 480px) {
+  .row {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 2fr 1fr;
+  }
+
+  .buttonGroup {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    row-gap: 1rem;
+  }
+
+  .buttonLink {
+    width: 10rem;
+    margin-top: 0;
+  }
+}
+
+@media (min-width: 768px) {
+  .header {
+    display: grid;
+    height: 4rem;
+    align-items: center;
+    padding: 0 1rem;
+    border-bottom: 1px solid var(--color-border);
+    grid-template-columns: 2fr 1fr 1fr 10rem;
+  }
+
+  .row {
+    grid-template-columns: 2fr 1fr 1fr 10rem;
+  }
+
+  .poolInfoDesktop {
+    display: block;
+  }
+
+  .poolInfoMobile {
+    display: none;
+  }
+
+  .buttonGroup {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    column-gap: 1rem;
+  }
+}

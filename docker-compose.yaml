@@ -1,0 +1,10 @@
+version: "3"
+services:
+  interface:
+    image: gcr.io/bayswap/web/interface:latest
+    restart: always
+    container_name: interface
+    ports:
+      - "3002:80"
+    expose:
+      - 3002

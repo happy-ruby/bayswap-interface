@@ -1,0 +1,65 @@
+.container {
+  padding: 1rem;
+}
+
+.copyButton {
+  display: flex;
+  border: none;
+  margin: auto;
+  background: none;
+  color: var(--color-text);
+  column-gap: 0.5rem;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.copyButton:hover {
+  color: var(--color-primary);
+}
+
+.userIcon {
+  display: block;
+  width: 3rem;
+  height: 3rem;
+  margin: 2rem auto;
+}
+
+.balance {
+  height: 4rem;
+  font-size: 28px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.buttonGroup {
+  display: flex;
+  column-gap: 1rem;
+}
+
+.iconButton {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 0.25rem;
+  border: none;
+  background: none;
+  color: var(--color-text);
+  column-gap: 0.25rem;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.iconButton:hover {
+  color: var(--color-primary);
+}
+
+.icon {
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+.smallIcon {
+  width: 1rem;
+  height: 1rem;
+}

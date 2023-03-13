@@ -1,0 +1,51 @@
+name: Build and Deploy to VM
+
+on:
+  push:
+    branches:
+      - main
+
+# Environment variables available to all jobs and steps in this workflow
+env:
+  GITHUB_SHA: ${{ github.sha }}
+  REGISTRY_HOSTNAME: gcr.io
+  GKE_PROJECT: bayswap
+  IMAGE: web/interface
+
+jobs:
+  setup-build-publish-deploy:
+    name: Setup, Build, Publish, and Deploy
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      # Build the Docker image
+      - name: Build
+        run: |
+          docker build -t $REGISTRY_HOSTNAME/$GKE_PROJECT/${IMAGE}:latest .   
+          docker save $REGISTRY_HOSTNAME/$GKE_PROJECT/${IMAGE}:latest > "interface.tar"
+
+      # Copy image to VM
+      - name: Copy file via ssh key
+        uses: appleboy/scp-action@master
+        with:
+          host: ${{ secrets.HOST }}
+          username: ${{ secrets.USERNAME }}
+          key: ${{ secrets.KEY }}
+          port: 22
+          source: "interface.tar"
+          target: "~/bayswap/interface"
+
+      # Run container
+      - name: Executing remote ssh commands
+        uses: appleboy/ssh-action@v0.1.7
+        with:
+          host: ${{ secrets.HOST }}
+          username: ${{ secrets.USERNAME }}
+          key: ${{ secrets.KEY }}
+          port: 22
+          script: |
+            cd ~/bayswap/interface
+            docker load < interface.tar
+            docker-compose up -d

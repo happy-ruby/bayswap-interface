@@ -1,0 +1,62 @@
+.container {
+  min-height: 400px;
+}
+
+.title {
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  font-size: 30px;
+  text-align: center;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 1rem;
+}
+
+.label {
+  font-weight: 600;
+}
+
+.info {
+  display: flex;
+  align-items: center;
+  column-gap: 0.5rem;
+}
+
+.coinIcon {
+  width: 2rem;
+  height: 2rem;
+}
+
+.buttonGroup {
+  display: flex;
+  column-gap: 1.5rem;
+}
+
+.button {
+  flex: 1;
+  padding: 1rem;
+  border: none;
+  border-radius: 28px;
+  margin-top: 2rem;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 24px;
+  outline: none;
+}
+
+.confirmButton {
+  composes: button;
+  background: var(--color-button-primary);
+  color: var(--color-button-primary-text);
+}
+
+.rejectButton {
+  composes: button;
+  background: var(--color-button-disabled);
+  color: var(--color-button-text);
+}

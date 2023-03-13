@@ -1,0 +1,72 @@
+{
+  "0x3a90487b3fa20e296e1d711ca372f1a06725fe61": {
+    "coinX": "0x202f970e9d7b3c4ae8a9877c854b82125ebcb808::dai::DAI",
+    "coinY": "0x202f970e9d7b3c4ae8a9877c854b82125ebcb808::usdt::USDT",
+    "curve": "0x7d2a71bc86ccdacde7742a534f8168ff64be772a::curves::Stable",
+    "creator": "0x215cdd73c621c849d0ba2a1936bcbf8414569c03",
+    "poolID": "0x3a90487b3fa20e296e1d711ca372f1a06725fe61"
+  },
+  "0x6b14339fefae1f03532a5f306caa1a09d1cf1cea": {
+    "coinX": "0x202f970e9d7b3c4ae8a9877c854b82125ebcb808::bnb::BNB",
+    "coinY": "0x202f970e9d7b3c4ae8a9877c854b82125ebcb808::dai::DAI",
+    "curve": "0x7d2a71bc86ccdacde7742a534f8168ff64be772a::curves::Uncorrelated",
+    "creator": "0x215cdd73c621c849d0ba2a1936bcbf8414569c03",
+    "poolID": "0x6b14339fefae1f03532a5f306caa1a09d1cf1cea"
+  },
+  "0x3dbd6e7956621ed0279a4ab6a9ccd1a87ca434ea": {
+    "coinX": "0x202f970e9d7b3c4ae8a9877c854b82125ebcb808::bnb::BNB",
+    "coinY": "0x202f970e9d7b3c4ae8a9877c854b82125ebcb808::usdt::USDT",
+    "curve": "0x7d2a71bc86ccdacde7742a534f8168ff64be772a::curves::Uncorrelated",
+    "creator": "0x215cdd73c621c849d0ba2a1936bcbf8414569c03",
+    "poolID": "0x3dbd6e7956621ed0279a4ab6a9ccd1a87ca434ea"
+  },
+  "0x281e2748658363ab41b1ae1809a0d27ce0e2ffa2": {
+    "coinX": "0x202f970e9d7b3c4ae8a9877c854b82125ebcb808::dai::DAI",
+    "coinY": "0x202f970e9d7b3c4ae8a9877c854b82125ebcb808::eth::ETH",
+    "curve": "0x7d2a71bc86ccdacde7742a534f8168ff64be772a::curves::Uncorrelated",
+    "creator": "0x215cdd73c621c849d0ba2a1936bcbf8414569c03",
+    "poolID": "0x281e2748658363ab41b1ae1809a0d27ce0e2ffa2"
+  },
+  "0x0ef355db589d240eac0acf2e98b5ffbca6d69ecf": {
+    "coinX": "0x202f970e9d7b3c4ae8a9877c854b82125ebcb808::eth::ETH",
+    "coinY": "0x202f970e9d7b3c4ae8a9877c854b82125ebcb808::usdt::USDT",
+    "curve": "0x7d2a71bc86ccdacde7742a534f8168ff64be772a::curves::Uncorrelated",
+    "creator": "0x215cdd73c621c849d0ba2a1936bcbf8414569c03",
+    "poolID": "0x0ef355db589d240eac0acf2e98b5ffbca6d69ecf"
+  },
+  "0x013e486f23e1c2caf4125d3799c9ec93a1360077": {
+    "coinX": "0x202f970e9d7b3c4ae8a9877c854b82125ebcb808::bnb::BNB",
+    "coinY": "0x202f970e9d7b3c4ae8a9877c854b82125ebcb808::eth::ETH",
+    "curve": "0x7d2a71bc86ccdacde7742a534f8168ff64be772a::curves::Uncorrelated",
+    "creator": "0x215cdd73c621c849d0ba2a1936bcbf8414569c03",
+    "poolID": "0x013e486f23e1c2caf4125d3799c9ec93a1360077"
+  },
+  "0xc61210ba3f18763bbf01031640af2adeaa636a08": {
+    "coinX": "0x202f970e9d7b3c4ae8a9877c854b82125ebcb808::btc::BTC",
+    "coinY": "0x202f970e9d7b3c4ae8a9877c854b82125ebcb808::dai::DAI",
+    "curve": "0x7d2a71bc86ccdacde7742a534f8168ff64be772a::curves::Uncorrelated",
+    "creator": "0x215cdd73c621c849d0ba2a1936bcbf8414569c03",
+    "poolID": "0xc61210ba3f18763bbf01031640af2adeaa636a08"
+  },
+  "0xb97304753446c932d37dcdf0cf6db8945a6fed61": {
+    "coinX": "0x202f970e9d7b3c4ae8a9877c854b82125ebcb808::btc::BTC",
+    "coinY": "0x202f970e9d7b3c4ae8a9877c854b82125ebcb808::usdt::USDT",
+    "curve": "0x7d2a71bc86ccdacde7742a534f8168ff64be772a::curves::Uncorrelated",
+    "creator": "0x215cdd73c621c849d0ba2a1936bcbf8414569c03",
+    "poolID": "0xb97304753446c932d37dcdf0cf6db8945a6fed61"
+  },
+  "0xa73e246db1ff6896b60e2b0f104393c238b0d355": {
+    "coinX": "0x202f970e9d7b3c4ae8a9877c854b82125ebcb808::bnb::BNB",
+    "coinY": "0x202f970e9d7b3c4ae8a9877c854b82125ebcb808::btc::BTC",
+    "curve": "0x7d2a71bc86ccdacde7742a534f8168ff64be772a::curves::Uncorrelated",
+    "creator": "0x215cdd73c621c849d0ba2a1936bcbf8414569c03",
+    "poolID": "0xa73e246db1ff6896b60e2b0f104393c238b0d355"
+  },
+  "0xb6e4c27ef85232b4865bf377e429739b31989d44": {
+    "coinX": "0x202f970e9d7b3c4ae8a9877c854b82125ebcb808::btc::BTC",
+    "coinY": "0x202f970e9d7b3c4ae8a9877c854b82125ebcb808::eth::ETH",
+    "curve": "0x7d2a71bc86ccdacde7742a534f8168ff64be772a::curves::Uncorrelated",
+    "creator": "0x215cdd73c621c849d0ba2a1936bcbf8414569c03",
+    "poolID": "0xb6e4c27ef85232b4865bf377e429739b31989d44"
+  }
+}

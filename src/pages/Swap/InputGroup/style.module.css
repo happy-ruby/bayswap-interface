@@ -1,0 +1,22 @@
+.inputGroup {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  column-gap: 0.5rem;
+}
+
+.input {
+  width: 60%;
+  border: none;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  background: none;
+  color: var(--color-input-text);
+  font-size: 34px;
+  font-weight: 300;
+  outline: none;
+}
+
+.input::placeholder {
+  color: var(--color-input-text);
+}

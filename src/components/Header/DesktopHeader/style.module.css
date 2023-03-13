@@ -1,0 +1,128 @@
+.header {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  margin: auto;
+}
+
+.logo {
+  width: 2rem;
+  height: 2rem;
+}
+
+.left {
+  display: flex;
+  align-items: center;
+  column-gap: 2rem;
+}
+
+.right {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  column-gap: 1rem;
+}
+
+.nav {
+  display: flex;
+}
+
+.smallIcon {
+  width: 1rem;
+  height: 1rem;
+}
+
+.iconButton {
+  border: none;
+  background: none;
+  color: var(--color-text);
+  cursor: pointer;
+}
+
+.network {
+  display: flex;
+  height: 2.5rem;
+  align-items: center;
+  justify-content: center;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  border: none;
+  border: 1px solid var(--color-button-primary);
+  border-radius: 24px;
+  font-size: 16px;
+}
+
+.balance {
+  display: flex;
+  height: 2.5rem;
+  align-items: center;
+  justify-content: center;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  border: none;
+  border: 1px solid var(--color-button-primary);
+  border-radius: 24px;
+  font-size: 16px;
+}
+
+.profileButton {
+  display: flex;
+  height: 2.5rem;
+  align-items: center;
+  justify-content: center;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  border: none;
+  border-radius: 24px;
+  background: var(--color-button-primary);
+  color: var(--color-button-primary-text);
+  column-gap: 0.5rem;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.connectButton {
+  display: flex;
+  height: 2.5rem;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 24px;
+  background: var(--color-button-primary);
+  color: var(--color-button-primary-text);
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+@media (min-width: 768px) {
+  .header {
+    max-width: 768px;
+  }
+}
+
+@media (min-width: 992px) {
+  .header {
+    max-width: 992px;
+  }
+
+  .logo {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .header {
+    max-width: 1200px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .header {
+    max-width: 1400px;
+  }
+}

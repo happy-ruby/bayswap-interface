@@ -1,0 +1,13 @@
+.card {
+  padding: 0.5rem 1rem;
+  border: solid 1px var(--color-border);
+  border-radius: 8px;
+  margin-top: 1rem;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 0;
+}

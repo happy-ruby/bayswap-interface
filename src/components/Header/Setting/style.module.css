@@ -1,0 +1,47 @@
+.container {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.title {
+  margin-bottom: 1rem;
+  font-size: 28px;
+  font-weight: 300;
+  line-height: 24px;
+  text-align: center;
+}
+
+.subtitle {
+  margin-bottom: 1rem;
+  font-weight: 500;
+}
+
+.buttonGroup {
+  display: flex;
+  height: 2.5rem;
+  padding: 0.25rem;
+  border-radius: 24px;
+  background: var(--color-button-primary);
+  column-gap: 0.5rem;
+}
+
+.themeButton {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 24px;
+  background: none;
+  color: var(--color-button-primary-text);
+  column-gap: 0.5rem;
+  cursor: pointer;
+  outline: none;
+}
+
+.themeButtonActive {
+  composes: themeButton;
+  background: var(--color-button-primary-text);
+  color: var(--color-button-primary);
+}

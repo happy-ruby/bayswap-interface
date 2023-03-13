@@ -1,0 +1,31 @@
+.coinSelect {
+  display: flex;
+  width: 8rem;
+  height: 3rem;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.75rem;
+  border: 1px solid var(--color-border);
+  border-radius: 30px;
+  background: none;
+  color: var(--color-text);
+  cursor: pointer;
+  font-weight: 600;
+  line-height: 24px;
+  outline: none;
+}
+
+.coin {
+  display: flex;
+  align-items: center;
+  column-gap: 0.5rem;
+}
+
+.coinIcon {
+  width: 2rem;
+  height: 2rem;
+}
+
+.placeholder {
+  font-size: 12px;
+}

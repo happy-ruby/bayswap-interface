@@ -1,0 +1,18 @@
+.submitButton {
+  width: 100%;
+  padding: 1rem;
+  border: none;
+  border-radius: 8px;
+  margin-top: 2rem;
+  background-color: var(--color-button-primary);
+  color: var(--color-button-primary-text);
+  cursor: pointer;
+  font-size: 20px;
+  outline: none;
+}
+
+.submitButton:disabled {
+  background: var(--color-button-disabled);
+  color: var(--color-button-text-disabled);
+  cursor: default;
+}

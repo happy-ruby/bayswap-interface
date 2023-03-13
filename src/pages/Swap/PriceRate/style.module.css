@@ -1,0 +1,21 @@
+.price {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 1rem;
+  border-top: 1px solid var(--color-border);
+  font-size: 14px;
+}
+
+.iconButton {
+  border: none;
+  background: none;
+  color: var(--color-text);
+  cursor: pointer;
+  outline: none;
+}
+
+.icon {
+  width: 1rem;
+  height: 1rem;
+}

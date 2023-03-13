@@ -1,0 +1,26 @@
+.aside {
+  position: fixed;
+  z-index: 10;
+  background: var(--color-card);
+  inset: 0;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  row-gap: 1rem;
+}
+
+.closeButton {
+  align-self: flex-end;
+  border: none;
+  background: none;
+  color: var(--color-text);
+  cursor: pointer;
+}
+
+.icon {
+  width: 1.25rem;
+  height: 1.25rem;
+}
